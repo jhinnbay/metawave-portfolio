@@ -1,0 +1,155 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to dark cyberpunk color palette with gradients */
+  --text: #eae9fc;
+  --background: #010104;
+  --primary: #21ba8c;
+  --secondary: #6653df;
+  --accent: #d4cff2;
+
+  /* Gradient variables */
+  --linearPrimarySecondary: linear-gradient(#21ba8c, #6653df);
+  --linearPrimaryAccent: linear-gradient(#21ba8c, #d4cff2);
+  --linearSecondaryAccent: linear-gradient(#6653df, #d4cff2);
+  --radialPrimarySecondary: radial-gradient(#21ba8c, #6653df);
+  --radialPrimaryAccent: radial-gradient(#21ba8c, #d4cff2);
+  --radialSecondaryAccent: radial-gradient(#6653df, #d4cff2);
+
+  --foreground: var(--text);
+  --card: #0a0a0f;
+  --card-foreground: var(--text);
+  --popover: #0a0a0f;
+  --popover-foreground: var(--text);
+  --primary-foreground: #010104;
+  --secondary-foreground: var(--text);
+  --muted: #1a1a24;
+  --muted-foreground: #a8a7c0;
+  --accent-foreground: #010104;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: #2a2a3a;
+  --input: #1a1a24;
+  --ring: var(--accent);
+  --radius: 0.75rem;
+  --sidebar: #0a0a0f;
+  --sidebar-foreground: var(--text);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: #010104;
+  --sidebar-accent: var(--secondary);
+  --sidebar-accent-foreground: var(--text);
+  --sidebar-border: #2a2a3a;
+  --sidebar-ring: var(--accent);
+}
+
+@theme inline {
+  /* Updated font to use Rethink Sans */
+  --font-sans: var(--font-rethink-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sea-urchin: #62be8f;
+  --color-blue-tint: #b6c9cf;
+  --color-featherweight: #deeeee;
+  --color-amethyst: #4a52f8;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Updated custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Magnetic Particles Field */
+.magnetic-btn {
+  overflow: visible !important;
+}
+
+.particles-field {
+  position: absolute;
+  inset: -100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.magnetic-btn:hover .particles-field {
+  opacity: 1;
+}
+
+@keyframes particleFloat {
+  0% { 
+    transform: translate(var(--x), var(--y)) scale(0);
+    opacity: 0;
+  }
+  50% { 
+    transform: translate(calc(var(--x) * -1), calc(var(--y) * -1)) scale(1);
+    opacity: 1;
+  }
+  100% { 
+    transform: translate(var(--x), var(--y)) scale(0);
+    opacity: 0;
+  }
+}
