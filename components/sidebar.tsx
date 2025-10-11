@@ -61,9 +61,15 @@ export function Sidebar() {
         </Badge>
       </div>
 
-      <button
+      <a
+        href="https://calendly.com/jamesdesign"
+        target="_blank"
+        rel="noopener noreferrer"
         onMouseEnter={playHoverSound}
-        className="magnetic-btn relative w-full aspect-square bg-[#62BE8F] rounded-[32px] overflow-visible group transition-all duration-300 hover:scale-[0.98] hover:shadow-lg hover:shadow-[#62BE8F]/20 p-6 hover:p-8"
+        className="magnetic-btn relative w-full aspect-square bg-[#62BE8F] rounded-[40px] overflow-visible group transition-all duration-300 hover:scale-[0.98] hover:shadow-lg hover:shadow-[#62BE8F]/20 p-6 hover:p-8 block"
+        style={{
+          borderRadius: '28%',
+        }}
       >
         {/* Particles Field Effect */}
         <div className="particles-field">
@@ -88,7 +94,7 @@ export function Sidebar() {
         <div className="absolute bottom-6 right-6 transition-all duration-300 group-hover:bottom-8 group-hover:right-8 z-10">
           <ArrowRight className="w-4 h-4 text-[#1a1a1a] transition-transform group-hover:translate-x-0.5" />
         </div>
-      </button>
+      </a>
 
       <div>
         <h2 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">Tech Stack</h2>
