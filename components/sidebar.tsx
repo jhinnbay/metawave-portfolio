@@ -62,14 +62,11 @@ export function Sidebar() {
       </div>
 
       <a
-        href="https://calendly.com/jamesdesign"
+        href="https://calendly.com/metawavestudio"
         target="_blank"
         rel="noopener noreferrer"
         onMouseEnter={playHoverSound}
-        className="magnetic-btn relative w-full aspect-square bg-[#62BE8F] rounded-[40px] overflow-visible group transition-all duration-300 hover:scale-[0.98] hover:shadow-lg hover:shadow-[#62BE8F]/20 p-6 hover:p-8 block"
-        style={{
-          borderRadius: '28%',
-        }}
+        className="magnetic-btn relative w-full aspect-square bg-[#62BE8F] rounded-[32px] overflow-visible group transition-all duration-300 hover:scale-[0.98] hover:shadow-lg hover:shadow-[#62BE8F]/20 p-6 hover:p-8 block"
       >
         {/* Particles Field Effect */}
         <div className="particles-field">
