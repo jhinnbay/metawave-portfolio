@@ -1,0 +1,118 @@
+import { Sidebar } from "@/components/sidebar"
+import { TopNavbar } from "@/components/top-navbar"
+import { Footer } from "@/components/footer"
+import { Separator } from "@/components/ui/separator"
+import { Card } from "@/components/ui/card"
+import Link from "next/link"
+
+export default function SCCaseStudy() {
+  return (
+    <div className="flex min-h-screen bg-background">
+      <Sidebar />
+
+      <main className="flex-1 ml-0 lg:ml-80">
+        <TopNavbar />
+        <div className="overflow-y-auto">
+          <div className="max-w-7xl mx-auto py-12 px-6">
+            {/* H1 */}
+            <h1 className="text-5xl font-bold text-foreground mb-8">
+              Abnormal Fashion Design for SC: a blend of accessibility and luxe dystopia.
+            </h1>
+
+            {/* Image */}
+            <div className="mb-8">
+              <img
+                src="https://i.imgur.com/4wTKWkQ.jpeg"
+                alt="Abnormal Fashion Design for SC"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+
+            <Separator className="my-8" />
+
+            {/* What we Did */}
+            <h3 className="text-3xl font-bold text-foreground mb-6">What we Did</h3>
+            
+            <div className="space-y-4 mb-8">
+              <div className="w-full p-6 border border-primary/20 rounded-lg bg-card/50 backdrop-blur-sm">
+                <p className="text-lg font-semibold">Brand Identity</p>
+              </div>
+              <div className="w-full p-6 border border-primary/20 rounded-lg bg-card/50 backdrop-blur-sm">
+                <p className="text-lg font-semibold">Mobile Design</p>
+              </div>
+            </div>
+
+            <Separator className="my-8" />
+
+            {/* Images */}
+            <div className="space-y-6 mb-8">
+              <img
+                src="https://i.imgur.com/nHJkSih.png"
+                alt="SC Case Study Image 1"
+                className="w-full h-auto rounded-lg"
+              />
+              <img
+                src="https://i.imgur.com/KlTyWQx.png"
+                alt="SC Case Study Image 2"
+                className="w-full h-auto rounded-lg"
+              />
+              <img
+                src="https://i.imgur.com/wE8ODH1.png"
+                alt="SC Case Study Image 3"
+                className="w-full h-auto rounded-lg"
+              />
+              <img
+                src="https://i.imgur.com/mYJDEMU.png"
+                alt="SC Case Study Image 4"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+
+            <Separator className="my-8" />
+
+            {/* All Deliverables */}
+            <h3 className="text-3xl font-bold text-foreground mb-6">All Deliverables</h3>
+            
+            <div className="space-y-3 mb-8">
+              <p className="text-lg text-foreground">Website Design (E-commerce)</p>
+              <p className="text-lg text-foreground">Brand Strategy</p>
+              <p className="text-lg text-foreground">Content Strategy</p>
+              <p className="text-lg text-foreground">Art Direction</p>
+              <p className="text-lg text-foreground">Visual Identity</p>
+              <p className="text-lg text-foreground">Design System</p>
+            </div>
+
+            <Separator className="my-8" />
+
+            {/* More Work */}
+            <h3 className="text-3xl font-bold text-foreground mb-6">More Work</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Link href="https://mentalwealth.framer.website/" target="_blank" rel="noopener noreferrer" className="block">
+                <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
+                  <div className="aspect-[16/9] overflow-hidden bg-muted">
+                    <img
+                      src="https://framerusercontent.com/images/gRHSOiB8qJnFPbUxdFo2rMPoO0.png"
+                      alt="Mental Wealth Academy Case Study"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="text-xs font-mono text-primary uppercase tracking-wider mb-2">Case Study</div>
+                    <h3 className="text-xl font-bold mb-2">Mental Wealth Academy</h3>
+                    <p className="text-muted-foreground text-sm">
+                      A hackathon project for Buildspace focusing on mental wellness accountability through community and goal tracking.
+                    </p>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                </Card>
+              </Link>
+            </div>
+          </div>
+          <Footer />
+        </div>
+      </main>
+    </div>
+  )
+}
+

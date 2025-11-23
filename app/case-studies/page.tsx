@@ -22,7 +22,7 @@ export default function CaseStudies() {
             </div>
 
             <div className="space-y-6">
-              {/* Large rectangle at top */}
+              {/* All case studies are now full width and same size */}
               <a 
                 href="https://mentalwealth.framer.website/" 
                 target="_blank"
@@ -48,46 +48,47 @@ export default function CaseStudies() {
                 </Card>
               </a>
 
-              {/* Two smaller rectangles underneath */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <a 
+                href="/case-studies/sc" 
+                className="block"
+              >
                 <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
                   <div className="aspect-[16/9] overflow-hidden bg-muted">
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary/10 to-primary/10">
-                      <div className="text-center p-6">
-                        <h2 className="text-2xl font-bold text-foreground mb-2">Coming Soon</h2>
-                        <p className="text-sm text-muted-foreground">More case studies coming soon</p>
-                      </div>
-                    </div>
+                    <img
+                      src="https://i.imgur.com/4wTKWkQ.jpeg"
+                      alt="Abnormal Fashion Design for SC"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
                   </div>
                   <div className="p-6">
                     <div className="text-xs font-mono text-primary uppercase tracking-wider mb-2">Case Study</div>
-                    <h3 className="text-xl font-bold mb-2">Future Project</h3>
-                    <p className="text-muted-foreground text-sm">
-                      Stay tuned for more detailed case studies.
+                    <h3 className="text-2xl font-bold mb-2">Abnormal Fashion Design for SC</h3>
+                    <p className="text-muted-foreground">
+                      A blend of accessibility and luxe dystopia.
                     </p>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 </Card>
+              </a>
 
-                <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
-                  <div className="aspect-[16/9] overflow-hidden bg-muted">
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-secondary/10">
-                      <div className="text-center p-6">
-                        <h2 className="text-2xl font-bold text-foreground mb-2">Coming Soon</h2>
-                        <p className="text-sm text-muted-foreground">More case studies coming soon</p>
-                      </div>
+              <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
+                <div className="aspect-[16/9] overflow-hidden bg-muted">
+                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary/10 to-primary/10">
+                    <div className="text-center p-6">
+                      <h2 className="text-2xl font-bold text-foreground mb-2">Coming Soon</h2>
+                      <p className="text-sm text-muted-foreground">More case studies coming soon</p>
                     </div>
                   </div>
-                  <div className="p-6">
-                    <div className="text-xs font-mono text-primary uppercase tracking-wider mb-2">Case Study</div>
-                    <h3 className="text-xl font-bold mb-2">Future Project</h3>
-                    <p className="text-muted-foreground text-sm">
-                      Stay tuned for more detailed case studies.
-                    </p>
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                </Card>
-              </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-xs font-mono text-primary uppercase tracking-wider mb-2">Case Study</div>
+                  <h3 className="text-2xl font-bold mb-2">Future Project</h3>
+                  <p className="text-muted-foreground">
+                    Stay tuned for more detailed case studies.
+                  </p>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              </Card>
             </div>
           </div>
           <Footer />
