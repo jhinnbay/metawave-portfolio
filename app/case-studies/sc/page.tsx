@@ -22,7 +22,7 @@ export default function SCCaseStudy() {
             {/* Image */}
             <div className="mb-8">
               <img
-                src="https://i.imgur.com/4wTKWkQ.jpeg"
+                src="https://i.imgur.com/w3OJfrf.png"
                 alt="Abnormal Fashion Design for SC"
                 className="w-full h-auto rounded-lg"
               />
@@ -52,7 +52,7 @@ export default function SCCaseStudy() {
                 className="w-full h-auto rounded-lg"
               />
               <img
-                src="https://i.imgur.com/KlTyWQx.png"
+                src="https://i.imgur.com/5hC9VqH.png"
                 alt="SC Case Study Image 2"
                 className="w-full h-auto rounded-lg"
               />
