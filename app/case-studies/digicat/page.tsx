@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator"
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
 
-export default function SCCaseStudy() {
+export default function DigicatCaseStudy() {
   return (
     <div className="flex min-h-screen bg-background">
       <Sidebar />
@@ -16,14 +16,14 @@ export default function SCCaseStudy() {
           <div className="max-w-7xl mx-auto py-12 px-6">
             {/* H1 */}
             <h1 className="text-5xl font-bold text-foreground mb-8">
-              Abnormal Fashion Design for SC: a blend of accessibility and luxe dystopia.
+              Digicat
             </h1>
 
             {/* Image */}
             <div className="mb-8">
               <img
-                src="https://i.imgur.com/nHJkSih.png"
-                alt="Abnormal Fashion Design for SC"
+                src="https://i.imgur.com/B0RpDP9.png"
+                alt="Digicat"
                 className="w-full h-auto rounded-lg"
               />
             </div>
@@ -38,6 +38,9 @@ export default function SCCaseStudy() {
                 <p className="text-lg font-semibold">Brand Identity</p>
               </div>
               <div className="w-full p-6 border border-primary/20 rounded-lg bg-card/50 backdrop-blur-sm">
+                <p className="text-lg font-semibold">Visual Direction</p>
+              </div>
+              <div className="w-full p-6 border border-primary/20 rounded-lg bg-card/50 backdrop-blur-sm">
                 <p className="text-lg font-semibold">Mobile Design</p>
               </div>
             </div>
@@ -47,23 +50,43 @@ export default function SCCaseStudy() {
             {/* Images */}
             <div className="space-y-6 mb-8">
               <img
-                src="https://i.imgur.com/nHJkSih.png"
-                alt="SC Case Study Image 1"
+                src="https://i.imgur.com/zHyCkdH.jpeg"
+                alt="Case Study Image 1"
                 className="w-full h-auto rounded-lg"
               />
               <img
-                src="https://i.imgur.com/5hC9VqH.png"
-                alt="SC Case Study Image 2"
+                src="https://i.imgur.com/htroAyO.png"
+                alt="Case Study Image 2"
                 className="w-full h-auto rounded-lg"
               />
               <img
-                src="https://i.imgur.com/wE8ODH1.png"
-                alt="SC Case Study Image 3"
+                src="https://i.imgur.com/lQBWwjy.png"
+                alt="Case Study Image 3"
                 className="w-full h-auto rounded-lg"
               />
               <img
-                src="https://i.imgur.com/mYJDEMU.png"
-                alt="SC Case Study Image 4"
+                src="https://i.imgur.com/J61eepu.png"
+                alt="Case Study Image 4"
+                className="w-full h-auto rounded-lg"
+              />
+              <img
+                src="https://i.imgur.com/z5JZOkX.png"
+                alt="Case Study Image 5"
+                className="w-full h-auto rounded-lg"
+              />
+              <img
+                src="https://i.imgur.com/uYqGemO.png"
+                alt="Case Study Image 6"
+                className="w-full h-auto rounded-lg"
+              />
+              <img
+                src="https://i.imgur.com/hYvP0J6.png"
+                alt="Case Study Image 7"
+                className="w-full h-auto rounded-lg"
+              />
+              <img
+                src="https://i.imgur.com/arXnrnN.png"
+                alt="Case Study Image 8"
                 className="w-full h-auto rounded-lg"
               />
             </div>
@@ -74,7 +97,7 @@ export default function SCCaseStudy() {
             <h3 className="text-3xl font-bold text-foreground mb-6">All Deliverables</h3>
             
             <div className="space-y-3 mb-8">
-              <p className="text-lg text-foreground">Website Design (E-commerce)</p>
+              <p className="text-lg text-foreground">Website Design</p>
               <p className="text-lg text-foreground">Brand Strategy</p>
               <p className="text-lg text-foreground">Content Strategy</p>
               <p className="text-lg text-foreground">Art Direction</p>
@@ -88,6 +111,26 @@ export default function SCCaseStudy() {
             <h3 className="text-3xl font-bold text-foreground mb-6">More Work</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Link href="/case-studies/sc" className="block">
+                <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
+                  <div className="aspect-[16/9] overflow-hidden bg-muted">
+                    <img
+                      src="https://i.imgur.com/4wTKWkQ.jpeg"
+                      alt="Abnormal Fashion Design for SC"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="text-xs font-mono text-primary uppercase tracking-wider mb-2">Case Study</div>
+                    <h3 className="text-xl font-bold mb-2">Abnormal Fashion Design for SC</h3>
+                    <p className="text-muted-foreground text-sm">
+                      A blend of accessibility and luxe dystopia.
+                    </p>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                </Card>
+              </Link>
+
               <Link href="https://mentalwealth.framer.website/" target="_blank" rel="noopener noreferrer" className="block">
                 <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
                   <div className="aspect-[16/9] overflow-hidden bg-muted">
