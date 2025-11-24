@@ -115,7 +115,7 @@ export default function DigicatCaseStudy() {
                 <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
                   <div className="aspect-[16/9] overflow-hidden bg-muted">
                     <img
-                      src="https://i.imgur.com/4wTKWkQ.jpeg"
+                      src="https://i.imgur.com/w3OJfrf.png"
                       alt="Abnormal Fashion Design for SC"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
@@ -144,7 +144,7 @@ export default function DigicatCaseStudy() {
                     <div className="text-xs font-mono text-primary uppercase tracking-wider mb-2">Case Study</div>
                     <h3 className="text-xl font-bold mb-2">Mental Wealth Academy</h3>
                     <p className="text-muted-foreground text-sm">
-                      A hackathon project for Buildspace focusing on mental wellness accountability through community and goal tracking.
+                      Mental health accountability w/ community and goal tracking.
                     </p>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />

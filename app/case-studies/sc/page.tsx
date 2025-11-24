@@ -22,7 +22,7 @@ export default function SCCaseStudy() {
             {/* Image */}
             <div className="mb-8">
               <img
-                src="https://i.imgur.com/nHJkSih.png"
+                src="https://i.imgur.com/w3OJfrf.png"
                 alt="Abnormal Fashion Design for SC"
                 className="w-full h-auto rounded-lg"
               />
@@ -88,6 +88,26 @@ export default function SCCaseStudy() {
             <h3 className="text-3xl font-bold text-foreground mb-6">More Work</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Link href="/case-studies/digicat" className="block">
+                <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
+                  <div className="aspect-[16/9] overflow-hidden bg-muted">
+                    <img
+                      src="https://i.imgur.com/B0RpDP9.png"
+                      alt="Digicat"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="text-xs font-mono text-primary uppercase tracking-wider mb-2">Case Study</div>
+                    <h3 className="text-xl font-bold mb-2">Digicat</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Brand identity, visual direction, and mobile design.
+                    </p>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                </Card>
+              </Link>
+
               <Link href="https://mentalwealth.framer.website/" target="_blank" rel="noopener noreferrer" className="block">
                 <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
                   <div className="aspect-[16/9] overflow-hidden bg-muted">
@@ -101,7 +121,7 @@ export default function SCCaseStudy() {
                     <div className="text-xs font-mono text-primary uppercase tracking-wider mb-2">Case Study</div>
                     <h3 className="text-xl font-bold mb-2">Mental Wealth Academy</h3>
                     <p className="text-muted-foreground text-sm">
-                      A hackathon project for Buildspace focusing on mental wellness accountability through community and goal tracking.
+                    Mental health accountability w/ community and goal tracking.
                     </p>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />

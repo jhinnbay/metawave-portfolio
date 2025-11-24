@@ -41,7 +41,7 @@ export default function CaseStudies() {
                     <div className="text-xs font-mono text-primary uppercase tracking-wider mb-2">Case Study</div>
                     <h3 className="text-2xl font-bold mb-2">Mental Wealth Academy</h3>
                     <p className="text-muted-foreground">
-                      A hackathon project for Buildspace focusing on mental wellness accountability through community and goal tracking.
+                    Mental health accountability w/ community and goal tracking.
                     </p>
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
@@ -55,7 +55,7 @@ export default function CaseStudies() {
                 <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
                   <div className="aspect-[16/9] overflow-hidden bg-muted">
                     <img
-                      src="https://i.imgur.com/4wTKWkQ.jpeg"
+                      src="https://i.imgur.com/w3OJfrf.png"
                       alt="Abnormal Fashion Design for SC"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
@@ -71,24 +71,28 @@ export default function CaseStudies() {
                 </Card>
               </a>
 
-              <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
-                <div className="aspect-[16/9] overflow-hidden bg-muted">
-                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-secondary/10 to-primary/10">
-                    <div className="text-center p-6">
-                      <h2 className="text-2xl font-bold text-foreground mb-2">Coming Soon</h2>
-                      <p className="text-sm text-muted-foreground">More case studies coming soon</p>
-                    </div>
+              <a 
+                href="/case-studies/digicat" 
+                className="block"
+              >
+                <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
+                  <div className="aspect-[16/9] overflow-hidden bg-muted">
+                    <img
+                      src="https://i.imgur.com/B0RpDP9.png"
+                      alt="Digicat"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
                   </div>
-                </div>
-                <div className="p-6">
-                  <div className="text-xs font-mono text-primary uppercase tracking-wider mb-2">Case Study</div>
-                  <h3 className="text-2xl font-bold mb-2">Future Project</h3>
-                  <p className="text-muted-foreground">
-                    Stay tuned for more detailed case studies.
-                  </p>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-              </Card>
+                  <div className="p-6">
+                    <div className="text-xs font-mono text-primary uppercase tracking-wider mb-2">Case Study</div>
+                    <h3 className="text-2xl font-bold mb-2">Digicat</h3>
+                    <p className="text-muted-foreground">
+                      Brand identity, visual direction, and mobile design.
+                    </p>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                </Card>
+              </a>
             </div>
           </div>
           <Footer />
