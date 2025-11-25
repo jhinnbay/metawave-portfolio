@@ -24,15 +24,13 @@ export default function CaseStudies() {
             <div className="space-y-6">
               {/* All case studies are now full width and same size */}
               <a 
-                href="https://mentalwealth.framer.website/" 
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/case-studies/mwa" 
                 className="block"
               >
                 <Card className="group relative overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
                   <div className="aspect-[16/9] overflow-hidden bg-muted">
                     <img
-                      src="https://framerusercontent.com/images/gRHSOiB8qJnFPbUxdFo2rMPoO0.png"
+                      src="https://i.imgur.com/YrtkD2a.png"
                       alt="The MWA Case Study - Mental Wealth Academy"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />

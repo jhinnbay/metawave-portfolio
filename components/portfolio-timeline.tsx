@@ -5,6 +5,24 @@ import { useRef } from "react"
 
 const projects = [
   {
+    id: 39,
+    title: "Interactive Experience",
+    description: "Dynamic interface with animated elements and interactions",
+    image: "https://i.imgur.com/vSNqugG.gif",
+  },
+  {
+    id: 40,
+    title: "Modern Interface",
+    description: "Contemporary design with clean aesthetics and functionality",
+    image: "https://i.imgur.com/Tv9qJXt.png",
+  },
+  {
+    id: 41,
+    title: "Digital Design",
+    description: "Innovative digital solution with cutting-edge visuals",
+    image: "https://i.imgur.com/vZe4VVf.png",
+  },
+  {
     id: 38,
     title: "Featured Design",
     description: "Latest portfolio showcase with cutting-edge design elements",
