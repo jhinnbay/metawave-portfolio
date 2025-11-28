@@ -5,6 +5,24 @@ import { useRef } from "react"
 
 const projects = [
   {
+    id: 42,
+    title: "Patchbox 02",
+    description: "",
+    image: "https://i.imgur.com/p9DQ9KY.png",
+  },
+  {
+    id: 43,
+    title: "Patchbox 01",
+    description: "",
+    image: "https://i.imgur.com/5PCzr95.png",
+  },
+  {
+    id: 44,
+    title: "Patchbox 03",
+    description: "",
+    image: "https://i.imgur.com/kqr5E5n.png",
+  },
+  {
     id: 39,
     title: "Interactive Experience",
     description: "Dynamic interface with animated elements and interactions",
